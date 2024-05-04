@@ -50,7 +50,7 @@ This project aims to clean, process, and analyze census data from a given source
     host="provide host name",
     user="provide user name",
     password="provide your password",
-    database="Capstone_Project") #Your database name) ```
+    database="Capstone_Project") #Your database name ```
 
 5. **Run the Python Script**
 - Open a terminal or command prompt.
