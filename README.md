@@ -44,13 +44,7 @@ This project aims to clean, process, and analyze census data from a given source
 - In the Python code (`Answers_task1-7.py`), locate the sections where the MongoDB and MySQL connections are established.
 - Replace the placeholders with your actual connection strings and credentials.
 - For MongoDB, update the `MongoClient` connection string.
-- For MySQL, update the `mysql.connector.connect` parameters with your host, user, password, and database name. For example:
-  ```python
-  mysql_connection = mysql.connector.connect(
-    host="provide host name",
-    user="provide user name",
-    password="provide your password",
-    database="Capstone_Project") #Your database name ```
+- For MySQL, update the `mysql.connector.connect` parameters with your host, user, password, and database name. 
 
 5. **Run the Python Script**
 - Open a terminal or command prompt.
