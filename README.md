@@ -26,11 +26,45 @@ This project aims to clean, process, and analyze census data from a given source
 
 ## Usage
 
-1. Install the required dependencies using `pip install -r requirements.txt`.
-2. Set up MongoDB and MySQL databases with the appropriate configurations.
-3. Update the connection strings and database credentials in the code.
-4. Run the Python script to execute the tasks.
-5. For Task 7, the Streamlit app will be launched, and you can interact with the visualizations and query results.
+1. **Install Dependencies**
+- Install the required Python dependencies by running the following command: pip install -r requirements.txt
+  This will install the necessary libraries like pandas, numpy, pymongo, mysql.connector, and streamlit.
+
+2. **Set up MongoDB**
+- Install MongoDB on your machine or set up a MongoDB Atlas cluster (cloud-based MongoDB service).
+- If you're using a local MongoDB instance, make sure the MongoDB server is running.
+- If you're using MongoDB Atlas, obtain the connection string from the Atlas dashboard.
+
+3. **Set up MySQL**
+- Install MySQL on your machine or use a cloud-based MySQL service.
+- Create a new database for the project.
+- Obtain the MySQL connection details (host, user, password, database name).
+
+4. **Update Connection Strings and Credentials**
+- In the Python code (`Answers_task1-7.py`), locate the sections where the MongoDB and MySQL connections are established.
+- Replace the placeholders with your actual connection strings and credentials.
+- For MongoDB, update the `MongoClient` connection string.
+- For MySQL, update the `mysql.connector.connect` parameters with your host, user, password, and database name. For example:
+  ```python
+  mysql_connection = mysql.connector.connect(
+    host="provide host name",
+    user="provide user name",
+    password="provide your password",
+    database="Capstone_Project") #Your database name) ```
+
+5. **Run the Python Script**
+- Open a terminal or command prompt.
+- Navigate to the project directory containing the `Answers_task1-7.py` file.
+- Run the Python script using the following command: python Answers_task1-7.py
+
+The script will execute the tasks in order, including data renaming, missing data handling, state/UT name standardization, new state/UT formation handling, data storage in MongoDB, and database connection and data upload to MySQL.
+
+6. **Streamlit Visualization (Task 7)**
+- After running the Python script, the Streamlit app for Task 7 will be launched automatically.
+- The app will display various visualizations and query results based on the census data stored in the MySQL database.
+- You can interact with the app, view the visualizations, and explore the query results.
+
+Note: Ensure that you have the necessary permissions and configurations set up for MongoDB and MySQL connections. If you encounter any issues, refer to the official documentation or seek assistance from the respective communities.
 
 ## File Structure
 
