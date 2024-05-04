@@ -162,7 +162,6 @@ for i in columns_required:
 #Save the processed data to mongoDB with a collection named “census” .
 
 #importing necessary libraries
-!pip install pymongo
 from pymongo import MongoClient
 
 #connecting to MongoDB Atlas
